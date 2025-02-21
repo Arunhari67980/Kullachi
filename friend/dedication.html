@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday!</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+    <style>
+     /* Global Styles */
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f0f0f0;
+  line-height: 1.6;
+  color: #333;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  border: 2px solid #ffcc33;
+  box-shadow: 0 0 10px #ffcc33;
+}
+
+h1 {
+  text-align: center;
+  color: #1b4ceb;
+  margin-bottom: 20px;
+  transition: color 0.3s ease;
+}
+
+h1:hover {
+  color: #1b4ceb;
+}
+
+p {
+  margin-bottom: 15px;
+  transition: color 0.3s ease;
+}
+
+p:hover {
+  color: #1b4ceb;
+}
+
+.signature {
+  font-weight: bold;
+  text-align: right;
+}
+
+/* Heart Styles */
+.heart {
+  position: fixed;
+  width: 50px; /* Adjust the size as needed */
+  height: 50px;
+  background-color: red;
+  transform: rotate(-45deg);
+  animation: float 5s infinite linear;
+}
+
+.heart:before,
+.heart:after {
+  content: '';
+  position: absolute;
+  background-color: red;
+  border-radius: 50%;
+  width: 50px; /* Make sure these sizes match the heart element */
+  height: 50px;
+}
+
+.heart:before {
+  top: -25px; /* Half the height of the heart element */
+  left: 0;
+}
+
+.heart:after {
+  top: 0;
+  left: 25px; /* Half the width of the heart element */
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) rotate(-45deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-1000px) rotate(-45deg);
+    opacity: 2;
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  .heart {
+    width: 10px;
+    height: 10px;
+  }
+
+  .heart:before,
+  .heart:after {
+    width: 40px;
+    height: 40px;
+  }
+
+  .heart:before {
+    top: -20px;
+  }
+
+  .heart:after {
+    left: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .heart {
+    width: 30px;
+    height: 30px;
+  }
+
+  .heart:before,
+  .heart:after {
+    width: 30px;
+    height: 30px;
+  }
+
+  .heart:before {
+    top: -15px;
+  }
+
+  .heart:after {
+    left: 15px;
+  }
+}
+
+    </style>
+  </head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light"> <a class="navbar-brand" href="#"> <img
+          src="images/children-817365_1280.jpg" alt="Logo" style="width: 60px; height: 50px;">SoulFriends </a> <button
+        class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span
+          class="navbar-toggler-icon"></span> </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"> <a class="nav-link" href="index.html">Welcome</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="countdown.html">CD</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="message.html">EverBond</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="dedication.html">SoulFrame</a> </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <section id="playlist">
+    <h2>Dedicated to you kullachi</h2>
+    <audio controls autoplay loop> <!-- Added autoplay and loop attributes -->
+      <source src="happy-birthday-254480.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </section>
+  <div class="container">
+    <h2>Dear Kullachi</h2>
+    <p>As I reflect on our friendship, I am filled with immense gratitude and warmth. Your friendship has been like a
+      guiding light in my life, illuminating even the darkest days and making the brightest ones shine even more.</p>
+    <p>Your kindness, understanding, and unwavering support have made an indelible mark on my heart. Whenever I’ve
+      needed someone to talk to, laugh with, or simply be there, you’ve been that person. You have a remarkable ability
+      to make every moment special, and your presence brings joy and comfort to my life.</p>
+    <p>I cherish the memories we’ve created together—the heartfelt conversations, the uncontrollable laughter, the
+      shared dreams and adventures. Your friendship is a treasure that I hold dear, and I can’t imagine my life without
+      you in it.</p>
+    <p>Today, on your birthday, I want you to know just how much you mean to me. You are more than a friend; you are
+      family. I am so grateful for you, and I am looking forward to many more years of shared experiences and cherished
+      moments.</p>
+    <p>Thank you for being you, and for being a wonderful friend. I hope this day is as incredible and special as you
+      are.</p>
+    <p>Wishing you all the happiness in the world, and a year filled with love, success, and everything your heart
+      desires.</p>
+    <p>With all my love and best wishes,</p>
+    <h3>Your NettaPaiyan.</h3>
+  </div>
+  <script src="script.js"></script>
+ </body>
+</html>

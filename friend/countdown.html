@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday!</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img src="images/children-817365_1280.jpg" alt="Logo" style="width: 60px; height: 50px;">SoulFriends
+        
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Welcome</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="countdown.html">CD</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="message.html">EverBond</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="dedication.html">SoulFrame</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+    
+  <section id="countdown">
+    <h2>⏱️Countdown To My Kullachi Birthday!🎂</h2>
+    <div id="countdown-timer"></div>
+  </section>
+
+  <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Countdown Timer
+        const countdownTimer = document.getElementById("countdown-timer");
+        if (countdownTimer) {
+            const targetDate = new Date("2025-03-07").getTime(); // Replace with her birthday date
+
+            const interval = setInterval(function() {
+                const now = new Date().getTime();
+                const distance = targetDate - now;
+
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                countdownTimer.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+
+                if (distance < 0) {
+                    clearInterval(interval);
+                    countdownTimer.innerHTML = "My dear friend 🌟, I'm truly sorry for any mistakes we've made in our long-distance friendship 💌. Please know that despite the distance 🌏, my heart is always with you ❤️. Happy Birthday 🎉! You mean the world to me, and our bond is unbreakable 🔗. Let's cherish the beautiful moments we've shared and look forward to many more ✨. Always here for you, no matter the miles 🚀.";
+                }
+            }, 1000);
+        }
+    });
+  </script>
+</body>
+</html>
